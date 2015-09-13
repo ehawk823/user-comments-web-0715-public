@@ -22,7 +22,7 @@ describe('Validating User Input', function() {
     addCommentListener();
     try {
       $('#show-comment-form').click();
-    } 
+    }
     catch(err) {
       // stops error from blowing up test
     }
@@ -62,7 +62,7 @@ describe('Validating User Input', function() {
 
       it('#commentValidator should display the comment error when no comment is given', function() {
         $('#comment-name').val('taco');
-        $('#com-email').val('taco@email.com');   
+        $('#com-email').val('taco@email.com');
         $('input[type="submit"]').last().click();
         expect($('#comment-error').css('display')).not.toBe('none');
       });
